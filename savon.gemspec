@@ -5,12 +5,12 @@ $:.unshift lib unless $:.include? lib
 require "savon/version"
 
 Gem::Specification.new do |s|
-  s.name        = "savon"
+  s.name        = "savon_with_adapter"
   s.version     = Savon::VERSION
   s.authors     = "Daniel Harrington"
   s.email       = "me@rubiii.com"
-  s.homepage    = "http://savonrb.com"
-  s.summary     = "Heavy metal SOAP client"
+  s.homepage    = "https://github.com/savonrb/savon/pull/566"
+  s.summary     = "Heavy metal SOAP client that can accept adapter option"
   s.description = s.summary
 
   s.rubyforge_project = s.name
@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "nori",     "~> 2.3.0"
   s.add_dependency "httpi",    "~> 2.1.0"
-  s.add_dependency "wasabi",   "~> 3.2.4"
+  s.add_dependency "wasabi_with_adapter", "~> 3.2.4"
   s.add_dependency "akami",    "~> 1.2.0"
   s.add_dependency "gyoku",    "~> 1.1.0"
 
